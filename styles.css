@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+/*header*/
+
+.header {
+  background-color: rgba(255, 255, 255, 0.7);
+
+  /* header container  */
+  .container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    /* navbar container  */
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1.5rem;
+      font-weight: 500;
+      padding: 20px;
+      font-size: 1rem;
+
+      /* navbar anchor tags  */
+      a {
+        text-decoration: none;
+        color: #555;
+      }
+      a:hover {
+        color: black;
+      }
+    }
+
+    .hero-container {
+      margin-top: 120px;
+      display: flex;
+      align-items: center;
+      /* flex: 1; */
+
+      .left-hero {
+        min-width: 50%;
+
+        p {
+          margin-top: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      .right-hero {
+        min-width: 50%;
+        animation: right2left 1s 1;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes right2left {
+  from {
+    transform: translateX(100vw); /* Start from right side */
+  }
+  to {
+    transform: translateX(0); /* End at normal position */
+  }
+}
