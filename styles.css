@@ -40,35 +40,72 @@ body {
         color: black;
       }
     }
+  }
+}
 
-    .hero-container {
-      margin-top: 120px;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      align-items: center;
-      /* flex: 1; */
+.hero-container {
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* flex: 1; */
 
-      .left-hero {
-        min-width: 50%;
-        flex: 1;
+  .left-hero {
+    min-width: 50%;
+    flex-basis: 49%;
 
-        p {
-          margin-top: 1.5rem;
-          margin-bottom: 1.5rem;
-        }
-      }
-
-      .right-hero {
-        flex: 1;
-        min-width: 50%;
-        animation: right2left 1s 1;
-
-        img {
-          width: 100%;
-        }
-      }
+    p {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
     }
+  }
+
+  .right-hero {
+    flex-basis: 49%;
+    min-width: 50%;
+    animation: right2left 1s 1;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* mediaQuery for hero-section  */
+
+@media (max-width: 650px) {
+  .hero-container {
+    flex-direction: column;
+    padding: 20px;
+    .right-hero,
+    .right-hero {
+      flex-basis: 100%;
+    }
+  }
+}
+
+/* mediaquery for navbar  */
+@media (min-width: 800px) {
+  .menuBar {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar,
+  .cart-img,
+  .menuBar {
+    display: block;
+  }
+
+  .navabar,
+  a,
+  hr {
+    display: none;
   }
 }
 
@@ -84,7 +121,7 @@ body {
 /* catogories  */
 
 .catgories-container {
-  margin: 70px 0px;
+  margin: 70px 0;
 
   .catogories-img {
     max-width: 1080px;
@@ -96,7 +133,22 @@ body {
 
     .c-img {
       flex-basis: 30%;
-      min-width: 250px;
+      min-width: 200px;
+      margin: 5px;
+    }
+  }
+}
+
+/* mediaQuery for catogorieSection  */
+
+@media (max-width: 600px) {
+  .catogories-img {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
     }
   }
 }
@@ -104,9 +156,6 @@ body {
 /* feature-container  */
 
 .feature-container {
-  max-width: 1080px;
-  margin: auto;
-
   /* feature-heading  */
   h2 {
     line-height: 50px;
@@ -130,36 +179,52 @@ body {
   /* feature-card  */
 
   .feature-card-contianer {
+    max-width: 1080px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     padding: 0px 25px;
     justify-content: space-around;
-
-    .feature-card {
-      cursor: pointer;
-      /* border: 1px solid black; */
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-      min-width: 200px;
-      margin-bottom: 50px;
-      flex-basis: 23%;
-
-      transition: transform 0.3s;
-
-      .title,
-      .price {
-        color: #555;
-      }
-    }
 
     /* feature-card-hover-transformation  */
     .feature-card:hover {
       transform: translateY(-5px);
     }
   }
+
+  .feature-card {
+    cursor: pointer;
+    /* border: 1px solid black; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    margin-bottom: 50px;
+    flex-basis: 23%;
+
+    transition: transform 0.3s;
+
+    .title,
+    .price {
+      color: #555;
+    }
+  }
+
+  /* feature-card-hover-transformation  */
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
 }
 
+/* mediaQuery for feature-card  */
+
+@media only screen and (max-width: 600px) {
+  .feature-card-contianer {
+    .feature-card {
+      flex-basis: 100%;
+    }
+  }
+}
 /* exclusive-container  */
 
 .exclusive-container {
@@ -195,10 +260,16 @@ body {
       flex-direction: column;
       justify-content: center;
 
-      h1 {
+      .exclusive-about {
+        display: flex;
+        flex-direction: column;
+      }
+
+      h2 {
         font-size: 50px;
         font-family: "Lato", sans-serif;
         margin: 25px 0px;
+        font-weight: 700;
       }
 
       p {
@@ -219,6 +290,27 @@ body {
       }
       .btn:hover {
         background-color: #421a14;
+      }
+    }
+  }
+}
+
+/* mediaQuery For exclusive  */
+
+@media (max-width: 650px) {
+  .exclusive-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .right-card {
+      .exclusive-about {
+        justify-content: center;
+        align-items: center;
+        h2 {
+          justify-content: center;
+          align-items: center;
+        }
       }
     }
   }
@@ -281,6 +373,19 @@ body {
   }
 }
 
+/* mediaQuery For testimonial */
+
+@media (max-width: 600px) {
+  .testimonial {
+    .testimonial-container {
+      padding: 40px;
+      .testimonial-card {
+        flex-basis: 100%;
+      }
+    }
+  }
+}
+
 /* brands  */
 
 .brands {
@@ -316,6 +421,7 @@ body {
   /* footer-container  */
 
   .footer-container {
+    cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     width: 1300px;
@@ -326,7 +432,7 @@ body {
 
     .app {
       display: flex;
-      flex-basis: 24%;
+      flex-basis: 30%;
       flex-direction: column;
 
       h3 {
@@ -349,13 +455,16 @@ body {
           width: 140px;
           margin: 5px 3px;
         }
+        img:hover {
+          transform: translateY(-2px);
+        }
       }
     }
 
     /* refferal-links  */
     .refferal-link {
       display: flex;
-      flex-basis: 48%;
+      flex: 1;
       flex-direction: column;
       align-items: center;
       margin-bottom: 20px;
@@ -374,6 +483,9 @@ body {
           list-style-type: none;
           margin-bottom: 10px;
           font-size: 14px;
+        }
+        li:hover {
+          color: #ff523b;
         }
       }
     }
@@ -381,7 +493,7 @@ body {
     /* social-media-refferal  */
     .social-media-cnt {
       display: flex;
-      flex-basis: 24%;
+      flex-basis: 12%;
       flex-direction: column;
       margin-bottom: 20px;
 
@@ -402,7 +514,24 @@ body {
           margin-bottom: 10px;
           font-size: 14px;
         }
+
+        li:hover {
+          color: #ff523b;
+        }
       }
+    }
+  }
+}
+
+/* mediaQuery For footer  */
+
+@media (max-width: 550px) {
+  .footer-container {
+    flex-direction: column;
+
+    .app {
+      justify-content: center;
+      align-items: center;
     }
   }
 }
