@@ -3,20 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Commerce website</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Product-details</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- header-area  -->
     <div class="header">
       <div class="container">
         <div class="navbar">
-          <a href="">Home</a>
-          <a href="./product-details.html">Products</a>
+          <a href="./index.html">Home</a>
+          <a
+            style="font-weight: 700; font-size: 17px; color: rgb(31, 31, 31)"
+            href=""
+            >Products</a
+          >
           <a href="">About</a>
           <a href="">Contact</a>
           <a href="">Account</a>
-          <a class="cart-img" href=""
+          <a href=""
             ><img src="./images/cart.png" alt="cart" width="30px" height="30px"
           /></a>
           <a class="menuBar" href="">≣</a>
@@ -25,43 +29,60 @@
       </div>
     </div>
 
-    <!-- //hero section  -->
-
-    <div class="hero-container">
-      <div class="left-hero">
-        <h1 style="font-size: 3.2rem">
-          Elite Gear for <br />
-          Elite Athletes
-        </h1>
-        <p style="color: #555">
-          Where performance meets style. Experience sportswear <br />
-          engineered for excellence, designed for champions.
-        </p>
-      </div>
-      <div class="right-hero">
-        <img src="./images/image1.png" alt="" />
-      </div>
-
-      <!-- catogories-area     -->
-      <div class="catgories-container">
-        <div class="catogories-img">
-          <img class="c-img" src="./images/category-1.jpg" alt="" />
-          <img class="c-img" src="./images/category-2.jpg" alt="" />
-          <img class="c-img" src="./images/category-3.jpg" alt="" />
+    <div class="feature-container">
+      <div class="product-hdng">
+        <h2>All Products</h2>
+        <div class="select">
+          <div
+            class="selected"
+            data-default="Defualt sorting"
+            data-one="Sort by price"
+            data-two="Sort by rating"
+            data-three="Sort by Popularity"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 512 512"
+              class="arrow"
+            >
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+              ></path>
+            </svg>
+          </div>
+          <div class="options">
+            <div title="all">
+              <input id="all" name="option" type="radio" checked="" />
+              <label class="option" for="all" data-txt="All"></label>
+            </div>
+            <div title="Sort by price">
+              <input id="Sort by price" name="option" type="radio" />
+              <label
+                class="option"
+                for="Sort by price"
+                data-txt="Sort by price"
+              ></label>
+            </div>
+            <div title="Sort by rating">
+              <input id="Sort by rating" name="option" type="radio" />
+              <label
+                class="option"
+                for="Sort by rating"
+                data-txt="Sort by rating"
+              ></label>
+            </div>
+            <div title="Sort by Popularity">
+              <input id="Sort by Popularity" name="option" type="radio" />
+              <label
+                class="option"
+                for="Sort by Popularity"
+                data-txt="Sort by Popularity"
+              ></label>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- feature-card-area   &  latest-product-area  -->
-
-    <div class="feature-container">
-      <!-- feature-header-container  -->
-
-      <h2 style="text-align: center">Feature Products</h2>
-      <div class="underline-container">
-        <div class="underline"></div>
-      </div>
-
       <!-- feature-card-container  -->
 
       <div class="feature-card-contianer">
@@ -229,11 +250,6 @@
       </div>
 
       <!-- latest-product  -->
-
-      <h2 style="text-align: center">Latest Products</h2>
-      <div class="underline-container">
-        <div class="underline"></div>
-      </div>
 
       <div class="feature-card-contianer">
         <!-- latest-product1  -->
@@ -559,236 +575,50 @@
       </div>
     </div>
 
-    <!-- exclusive-area  -->
+    <!-- product btn page  -->
+    <span class="product-page-btn">
+      <div class="btn">1</div>
+      <div class="btn">2</div>
+      <div class="btn">3</div>
+      <div class="btn">4</div>
+      <div class="btn">→</div>
+    </span>
 
-    <div class="exclusive-container">
-      <div class="exclusive-card">
-        <!-- left-card  -->
-        <div class="left-card">
-          <div class="exclusive-img">
-            <img src="./images/exclusive.png" alt="exclusive-sale" />
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-container">
+        <!-- app-container  -->
+        <div class="app">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and ios mobile phone</p>
+          <div class="app-img">
+            <img src="./images/app-store.png" alt="" />
+            <img src="./images/play-store.png" alt="" />
           </div>
         </div>
 
-        <!-- right-card  -->
-        <div class="right-card">
-          <div class="exclusive-about">
-            <p>Exclusively Available on store</p>
-            <h2>Smart Band 4</h2>
-            <p style="font-size: 14px">
-              The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3)
-              AMOLED color full-touch display with adjustable brightness, so
-              everything is clear as can be.
-            </p>
-            <div class="btn">Buy Now →</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- testimonial-area  -->
-
-    <div class="testimonial">
-      <div class="testimonial-container">
-        <!-- testimonial-card-1  -->
-        <div class="testimonial-card">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis
-            neque, atque illum, iusto perferendis consequuntur sunt nihil fugit
-            voluptate tempore, fugiat aut.
-          </p>
-          <!-- testimonial-star  -->
-          <div class="star-container">
-            <img
-              src="./images/star.png"
-              alt="star"
-              height="15px"
-              width="16px"
-            />
-            <img
-              src="./images/star.png"
-              alt="star"
-              height="15px"
-              width="16px"
-            />
-            <img
-              src="./images/star.png"
-              alt="star"
-              height="15px"
-              width="16px"
-            />
-            <img
-              src="./images/star.png"
-              alt="star"
-              height="15px"
-              width="16px"
-            />
-            <img
-              src="./images/emptyStar.png"
-              alt="emptyStar"
-              height="15px"
-              width="16px"
-            />
-          </div>
-
-          <div class="testimonial-author-cnt">
-            <img src="./images/user-1.png" alt="" />
-          </div>
-
-          <h3 style="font-family: 'lato', sans-serif">Jean Rose</h3>
+        <!-- refferal-link  -->
+        <div class="refferal-link">
+          <h3>Useful links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Posts</li>
+            <li>Return Policy</li>
+            <li>Join Affliate</li>
+          </ul>
         </div>
 
-        <!-- testimonial-card-2  -->
-        <div class="testimonial-card">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis
-            neque, atque illum, iusto perferendis consequuntur sunt nihil fugit
-            voluptate tempore, fugiat aut.
-          </p>
-          <!-- testimonial-star  -->
-          <div class="star-container">
-            <img
-              src="./images/star.png"
-              alt="star"
-              height="15px"
-              width="16px"
-            />
-            <img
-              src="./images/star.png"
-              alt="star"
-              height="15px"
-              width="16px"
-            />
-            <img
-              src="./images/star.png"
-              alt="star"
-              height="15px"
-              width="16px"
-            />
-            <img
-              src="./images/star.png"
-              alt="star"
-              height="15px"
-              width="16px"
-            />
-            <img
-              src="./images/emptyStar.png"
-              alt="emptyStar"
-              height="15px"
-              width="16px"
-            />
-          </div>
-
-          <div class="testimonial-author-cnt">
-            <img src="./images/user-2.png" alt="" />
-          </div>
-          <h3 style="font-family: 'lato', sans-serif">Walter white</h3>
-        </div>
-
-        <!-- testimonial-card-3  -->
-        <div class="testimonial-card">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis
-            neque, atque illum, iusto perferendis consequuntur sunt nihil fugit
-            voluptate tempore, fugiat aut.
-          </p>
-          <!-- testimonial-star  -->
-          <div class="star-container">
-            <img
-              src="./images/star.png"
-              alt="star"
-              height="15px"
-              width="16px"
-            />
-            <img
-              src="./images/star.png"
-              alt="star"
-              height="15px"
-              width="16px"
-            />
-            <img
-              src="./images/star.png"
-              alt="star"
-              height="15px"
-              width="16px"
-            />
-            <img
-              src="./images/star.png"
-              alt="star"
-              height="15px"
-              width="16px"
-            />
-            <img
-              src="./images/emptyStar.png"
-              alt="emptyStar"
-              height="15px"
-              width="16px"
-            />
-          </div>
-
-          <div class="testimonial-author-cnt">
-            <img src="./images/user-3.png" alt="" />
-          </div>
-          <h3 style="font-family: 'lato', sans-serif">Halen</h3>
+        <!-- social-media-cnt -->
+        <div class="social-media-cnt">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Youtube</li>
+          </ul>
         </div>
       </div>
     </div>
-
-    <div class="brands">
-      <div class="brands-cnt">
-        <div id="brand-img1">
-          <img class="brand-logo" src="./images/logo-godrej.png" alt="" />
-        </div>
-        <div class="brand-logo" id="brand-img2">
-          <img src="./images/logo-oppo.png" alt="" />
-        </div>
-        <div id="brand-img3">
-          <img class="brand-logo" src="./images/logo-coca-cola.png" alt="" />
-        </div>
-        <div class="brand-logo" id="brand-img4">
-          <img src="./images/logo-paypal.png" alt="" />
-        </div>
-        <div id="brand-img5">
-          <img class="brand-logo" src="./images/logo-philips.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="footer">
-        <div class="footer-container">
-          <!-- app-container  -->
-          <div class="app">
-            <h3>Download Our App</h3>
-            <p>Download App for Android and ios mobile phone</p>
-            <div class="app-img">
-              <img src="./images/app-store.png" alt="" />
-              <img src="./images/play-store.png" alt="" />
-            </div>
-          </div>
-
-          <!-- refferal-link  -->
-          <div class="refferal-link">
-            <h3>Useful links</h3>
-            <ul>
-              <li>Coupons</li>
-              <li>Blog Posts</li>
-              <li>Return Policy</li>
-              <li>Join Affliate</li>
-            </ul>
-          </div>
-
-          <!-- social-media-cnt -->
-          <div class="social-media-cnt">
-            <h3>Follow Us</h3>
-            <ul>
-              <li>Facebook</li>
-              <li>Instagram</li>
-              <li>Twitter</li>
-              <li>Youtube</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
