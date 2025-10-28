@@ -826,6 +826,11 @@ body {
     }
   }
 }
+@media (max-width: 800px) {
+  .crtBtn {
+    display: block;
+  }
+}
 
 @media (max-width: 650px) {
   .carted-pdct-cnt {
