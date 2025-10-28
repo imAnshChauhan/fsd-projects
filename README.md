@@ -52,6 +52,6 @@ open index.html
 ---
 
 Would you like me to customize it a bit more — for example:
-- add which things I missed,s
+- add things which I missed,
 - or make it look more **premium** (with emojis, gradient badges, and markdown styling)?
 
