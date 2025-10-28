@@ -939,7 +939,8 @@ body {
 }
 
 @media (max-width: 800px) {
-  .proceedBtn {
+  .proceedBtn,
+  .crtBtn {
     display: block;
   }
 }
