@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-Cart</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- header-area  -->
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="./product-details.html">Products</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+          <a href="">Account</a>
+          <a class="cart-img" href=""
+            ><img src="./images/cart.png" alt="cart" width="30px" height="30px"
+          /></a>
+          <a class="menuBar" href="">≣</a>
+        </div>
+        <hr style="max-height: 40.5rem; margin-left: 30.5rem" />
+      </div>
+    </div>
+
+    <!-- cart section  -->
+
+    <div class="cartSection-contianer">
+      <table>
+        <!-- table - header  -->
+        <thead>
+          <th>Product</th>
+          <th>Quantitiy</th>
+          <th>Subtotal</th>
+        </thead>
+
+        <!-- table body  -->
+
+        <tbody>
+          <!-- firstProductInfo  -->
+          <tr>
+            <td>
+              <div class="cartInnfo">
+                <div class="infoImg">
+                  <img src="./images/gallery-1.jpg" alt="" />
+                </div>
+                <div class="infotext">
+                  <p>Red Printed T-shirt</p>
+                  <small>₹50.00</small>
+                  <br />
+                  <a
+                    style="
+                      text-decoration: none;
+                      color: #ff523b;
+                      font-size: 12px;
+                    "
+                    href=""
+                    >remove</a
+                  >
+                </div>
+              </div>
+            </td>
+
+            <td>
+              <input type="number" placeholder="1" />
+            </td>
+
+            <td class="total">₹50.00</td>
+          </tr>
+
+          <!-- secondProductInfo  -->
+
+          <tr>
+            <td>
+              <div class="cartInnfo">
+                <div class="infoImg">
+                  <img src="./images/buy-2.jpg" alt="" />
+                </div>
+                <div class="infotext">
+                  <p>HRX Sports Shoe</p>
+                  <small>₹2250.00</small>
+                  <br />
+                  <a
+                    style="
+                      text-decoration: none;
+                      color: #ff523b;
+                      font-size: 12px;
+                    "
+                    href=""
+                    >remove</a
+                  >
+                </div>
+              </div>
+            </td>
+
+            <td>
+              <input type="number" placeholder="1" />
+            </td>
+
+            <td class="total">₹2250.00</td>
+          </tr>
+
+          <!-- thirdProductInfo  -->
+
+          <tr>
+            <td>
+              <div class="cartInnfo">
+                <div class="infoImg">
+                  <img src="./images/buy-3.jpg" alt="" />
+                </div>
+                <div class="infotext">
+                  <p>HRX Grey Trackpant</p>
+                  <small>₹1950.00</small>
+                  <br />
+                  <a
+                    style="
+                      text-decoration: none;
+                      color: #ff523b;
+                      font-size: 12px;
+                    "
+                    href=""
+                    >remove</a
+                  >
+                </div>
+              </div>
+            </td>
+
+            <td>
+              <input type="number" placeholder="1" />
+            </td>
+
+            <td class="total">₹1950.00</td>
+          </tr>
+        </tbody>
+
+        <tr></tr>
+      </table>
+
+      <div class="totalPrice">
+        <table>
+          <tbody>
+            <tr>
+              <td>SubTotal</td>
+              <td style="text-align: right">₹1950.00</td>
+            </tr>
+
+            <tr>
+              <td>Tax</td>
+              <td style="text-align: right">₹350.00</td>
+            </tr>
+
+            <tr>
+              <td>Total</td>
+              <td style="text-align: right">₹2300.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <a href="#" class="proceedBtn">Proceed to checkout →</a>
+      </div>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+      <div class="footer">
+        <div class="footer-container">
+          <!-- app-container  -->
+          <div class="app">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone</p>
+            <div class="app-img">
+              <img src="./images/app-store.png" alt="" />
+              <img src="./images/play-store.png" alt="" />
+            </div>
+          </div>
+
+          <!-- refferal-link  -->
+          <div class="refferal-link">
+            <h3>Useful links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Posts</li>
+              <li>Return Policy</li>
+              <li>Join Affliate</li>
+            </ul>
+          </div>
+
+          <!-- social-media-cnt -->
+          <div class="social-media-cnt">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
