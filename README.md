@@ -28,7 +28,7 @@ This project demonstrates the structure and functionality of a professional onli
 
 Ansh Chauhan
 📧 anansh1415@gmail.com
-🌐[ [LinkedIn / Portfolio if available]](https://www.linkedin.com/in/ansh-chauhan-911126351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app )
+🌐[ [LinkedIn](https://www.linkedin.com/in/ansh-chauhan-911126351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app )
 
 📝 License
 
