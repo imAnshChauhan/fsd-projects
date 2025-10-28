@@ -21,7 +21,6 @@ This project demonstrates the structure and functionality of a professional onli
 - **Frontend:** HTML, CSS  
 - **Deployment:** Vercel  
 
-*(If you used frameworks like React, Next.js, or Tailwind CSS — replace the stack accordingly)*
 
 ---
 
@@ -29,4 +28,4 @@ This project demonstrates the structure and functionality of a professional onli
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/ecommerce-website.git
+   git clone https://github.com/imAnshChauhan/fsd-projects
