@@ -11,8 +11,6 @@ This project demonstrates the structure and functionality of a professional onli
 
 - 🧭 Fully responsive design (mobile-friendly)
 - 🛍️ Product listing and detailed view
-- 🧺 Add to Cart functionality
-- 🔍 Search and filter options
 - 🌗 Modern UI/UX design
 - ⚡ Fast performance (deployed on Vercel)
 
@@ -20,7 +18,7 @@ This project demonstrates the structure and functionality of a professional onli
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript  
+- **Frontend:** HTML, CSS  
 - **Deployment:** Vercel  
 
 *(If you used frameworks like React, Next.js, or Tailwind CSS — replace the stack accordingly)*
